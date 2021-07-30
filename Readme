@@ -1,0 +1,30 @@
+This simulator is just a practice of JSON-SERVER module. 
+This package will simulate a backend, getting data from db.json
+There are three tables in db.json file called students, subjects and enrollments.
+
+
+1. Pre-requirements: 
+a) create a node project typing the command line in a choosen folder "npm init -y"
+b) install globally the package json-server typing the command line "npm install -g json-server"
+
+
+2. Start the aplication typing:
+start the application typing "json-server --watch db.json"
+
+The application will start on localhost:3000. Try that URL on your browser
+
+
+3. Running simulator in a specific port:
+You can choose de port where simulator serve data typing --PORT and number as following.
+   "json-server --watch db.json --port 3004"
+
+4. Based on our db.json, you can try following routes. The simulator can simulate CRUD operations:
+GET    http://localhost:3000/students
+GET    http://localhost:3000/students/1
+POST   http://localhost:3000/students
+PUT    http://localhost:3000/students/1
+PATCH  http://localhost:3000/students/1
+DELETE http://localhost:3000/students/1
+
+5. You can get more information about package, routes and others at 
+https://www.npmjs.com/package/json-server#alternative-port
